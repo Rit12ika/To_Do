@@ -18,118 +18,20 @@ Online Deployment of this project is available at [Todo App](https://tv2z-app.he
 
 You can use below credentials to test pagination and search functions of the app. The database is populated by fakerjs library.
 
-```
-email: john@gmail.com
-password: 123456
-```
+
 
 ### Getting Started
 
 To get started you can simply clone the repo and install the dependencies in the root folder
 
-| Steps   |with [NPM](https://www.npmjs.com/) |
-| ------- | --------------------------------- | 
+
 | Install |`npm install`                      |
 | Run     |`npm run dev`                      |
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Directory Layout and Tree
 
-```
-
-.
-├── client                              # Front end part of application
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── public
-│   │   ├── favicon.ico
-│   │   ├── index.html
-│   │   ├── logo192.png
-│   │   ├── logo512.png
-│   │   ├── manifest.json
-│   │   └── robots.txt
-│   ├── README.md
-│   └── src
-│       ├── App.css
-│       ├── App.js
-│       ├── atoms                       # Reusable small components
-│       │   ├── Button.js
-│       │   ├── Dropdown.js
-│       │   ├── FlexTable.css
-│       │   ├── FlexTable.js
-│       │   ├── Icon.js
-│       │   ├── Input.js
-│       │   ├── Modal.css
-│       │   ├── Modal.js
-│       │   ├── Pagination.css
-│       │   ├── Pagination.js
-│       │   └── Spinner.js
-│       ├── helpers
-│       │   ├── formatDate.js
-│       │   └── setAuthToken.js
-│       ├── img
-│       │   └── todo_cover.jpg
-│       ├── index.js
-│       ├── pages                       # Front end pages and components
-│       │   ├── auth
-│       │   │   ├── Login.js
-│       │   │   └── Register.js
-│       │   ├── dashboard
-│       │   │   ├── Dashboard.js
-│       │   │   ├── PageSize.js
-│       │   │   ├── Search.js
-│       │   │   ├── Todo.js
-│       │   │   └── TodoList.js
-│       │   ├── Homepage.js
-│       │   ├── layout
-│       │   │   ├── Navbar.js
-│       │   │   └── NavLinks.js
-│       │   ├── NotFound.js
-│       │   └── routing
-│       │       ├── PrivateRoute.js
-│       │       └── Routes.js
-│       └── redux
-│           ├── actions
-│           │   ├── auth.js
-│           │   ├── pagination.js
-│           │   ├── search.js
-│           │   ├── tag.js
-│           │   ├── todo.js
-│           │   └── types.js
-│           ├── hooks.js                # Redux custom hooks
-│           ├── reducers
-│           │   ├── auth.js
-│           │   ├── index.js
-│           │   ├── pagination.js
-│           │   ├── search.js
-│           │   ├── tag.js
-│           │   └── todo.js
-│           └── store.js                # Redux Store for state management
-├── config
-│   ├── db.js
-│   ├── default.json
-│   └── production.json
-├── middleware
-│   └── auth.js
-├── models                  #Database Models
-│   ├── Tag.js
-│   ├── Todo.js
-│   └── User.js
-├── package.json
-├── package-lock.json
-├── Readme.md
-├── routes                  # Api routes folder
-│   └── api
-│       ├── auth.js
-│       ├── tags.js
-│       ├── todos.js
-│       └── users.js
-└── server.js               # Server file
-
-
-```
 
 ### Application
 
@@ -200,38 +102,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 - tag: stores todo tag states
 - search: stores search states and results
 - pagination: stores pagination states and items
-
-```
-{
-  auth: {
-    token: null,
-    isAuthenticated: false,
-    loading: false,
-    user: null
-  },
-  todo: {
-    todos: [],
-    todo: {},
-    loading: false,
-    error: {}
-  },
-  tag: {
-    tags: [],
-    loading: false,
-    error: {}
-  },
-  search: {
-    isActive: null,
-    searchTerm: '',
-    filtered: []
-  },
-  pagination: {
-    activePage: null,
-    pageSize: 10,
-    pageOfItems: [],
-    pageReset: true
-  }
-}
 
 ```
 
